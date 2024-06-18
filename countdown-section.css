@@ -1,0 +1,81 @@
+/* timer */
+.custom-image-countdown-banner .image-banner {
+  display: flex;
+  justify-content: center;
+}
+.image-padding {
+  padding: 20px 0;
+}
+.col-gap-1 {
+  column-gap: 0.3rem;
+}
+.col-gap-2 {
+  column-gap: 1.18rem;
+}
+.flex {
+  display: flex;
+}
+.justify-center {
+  justify-content: center;
+}
+.banner__content {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: flex-end;
+}
+.banner-text-wrapper {
+  display: flex;
+  align-items: center;
+  padding: 6px;
+  width: 100%;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-direction: column;
+}
+.banner-text-wrapper .description {
+  font-weight: 600;
+  text-align: center;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+.no-js .countdown {
+  display: none;
+}
+.countdown {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  text-align: center;
+  font-size: 1.3rem;
+}
+.countdown__item {
+  font-size: 12px;
+  display: inline-block;
+  text-transform: lowercase;
+}
+.countdown__item + .countdown__item {
+  border-inline-start: 0.1rem solid rgba(var(--color-border), 0.2);
+}
+.countdown__item .countdown__item--digits {
+  display: block;
+  border-radius: 4px;
+  font-size: 14px;
+  padding: 0.6rem 1rem;
+  line-height: 1.3rem;
+}
+.countdown-timer__message {
+  display: none;
+}
+.countdown.hidden + .countdown-timer__message {
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .banner-text-wrapper {
+    flex-direction: row;
+    gap: 2rem;
+  }
+  .banner-text-wrapper .description {
+    font-size: 2rem;
+  }
+}
