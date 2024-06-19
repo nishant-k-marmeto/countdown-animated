@@ -36,10 +36,10 @@ This component provides a basic outline with minimal styling. To ensure it match
    Create a section named `marmeto-image.liquid` under `snippets directory` and copy paste the snippet code
    
  - ### Step 3:
-   Create a CSS file named `marmeto-image-comparison.css` under `assets directory` and copy paste the asset code
+   Create a CSS file named `marmeto-countdown-timer.css` under `assets directory` and copy paste the asset code
    
  - ### Step 4: 
-   Create a section named `marmeto-image-comparison.js` under `assets directory` and copy paste the asset code
+   Create a section named `marmeto-countdown-timer.js` under `assets directory` and copy paste the asset code
     
     
 
