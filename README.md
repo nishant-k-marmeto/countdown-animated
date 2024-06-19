@@ -2,8 +2,8 @@
 
 This component provides a basic outline with minimal styling. To ensure it matches your design specifications, additional custom styling may be required.
 
-
-![Preview Image]![alt text](image.png)
+# Preview
+![alt text](image.png)
 ![alt text](image-1.png)
 
 
