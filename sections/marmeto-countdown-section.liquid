@@ -1,5 +1,5 @@
-{{ 'countdown-section.css' | asset_url | stylesheet_tag }}
-<script src="{{ 'countdown-section.js' | asset_url }}" defer></script>
+{{ 'marmeto-countdown-section.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'marmeto-countdown-section.js' | asset_url }}" defer></script>
 
 <style>
     #shopify-section-{{ section.id }} {
@@ -27,12 +27,13 @@
   {% if section.settings.image_desktop != blank %}
         <div class="image-banner-container">
             <a href="{{ section.settings.img_link }}" class="image-wrapper">
-                {% render 'image',
-                class: 'image-banner',
-                loading: 'eager',
-                mobileSrc: section.settings.image_mobile,
-                desktopSrc: section.settings.image_desktop
-                %}
+                {% render 'marmeto-image'
+                forloop: forloop,
+                desktopImage: block.settings.image_desktop,
+                mobileImage: block.settings.image_mobile,
+                imageClass: 'image-banner',
+                pictureClass: 'picture-class'
+                %}          
             </a>
         </div>
     {% endif %}
@@ -43,7 +44,7 @@
             <div class="description">{{ section.settings.heading | strip_html }}</div>
           {% endif %}
           {% if section.settings.date != blank %}
-            <countdown-timer class="countdown col-gap-2" data-date="{{ section.settings.date | escape }}"> </countdown-timer>
+            <marmeto-countdown-timer class="countdown col-gap-2" data-date="{{ section.settings.date | escape }}"> </marmeto-countdown-timer>
           {% endif %}
         </div>
       </div>

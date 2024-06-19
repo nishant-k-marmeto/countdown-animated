@@ -78,4 +78,4 @@ class CountdownTimer extends HTMLElement {
   }
 }
 
-customElements.define('countdown-timer', CountdownTimer);
+customElements.define('marmeto-countdown-timer', CountdownTimer);
